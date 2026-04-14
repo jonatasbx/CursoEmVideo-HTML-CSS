@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Imagens</title>
+</head>
+<body>
+<h1>Esse é meu site ajustavel</h1>
+<p>Vamos verificar como a imagem vai aparecer de acordo com o tamanho da altura</p>
+<picture>
+    <source media="(max-width: 750px)" srcset="assets/p.png">
+    <source media="(max-width: 1050px)" srcset="assets/m.png">
+    <img src="assets/g.png" alt="Imagens Flexivel" >
+</picture>
+<h1>Reproduzindo audio</h1>
+<p>Vamos aprender a reproduzir audio direto de HTML</p>
+<audio preload="metadata" src="midia/Gravando.m4a" controls></audio>
+<h1>Colocando videos no Site</h1>
+<p>Aqui vamos aprender a colocar videos no Site hospedado localmente</p>
+<video src="midia/video.mp4" controls width="300" preload="metadata" poster="assets/p.png"></video>
+<h1>Inserindo Video do Youtube</h1>
+
+<iframe width="460" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=-HmfcKqXOVv2oFx8&amp;start=1"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
