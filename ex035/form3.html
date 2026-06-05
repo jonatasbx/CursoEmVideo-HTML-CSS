@@ -8,26 +8,37 @@
 <body>
     <h1>Formulario de Aluno</h1>
     <form action="" method="get" autocomplete="on">
-        <p>
-            <label for="inome">Nome: </label>
-            <input type="text" name="nome" id="inome" autocomplete="name" required maxlength="30" placeholder="Nome Competo">
-        </p>
-        <p>
-            <label for="imedia">Media: </label>
-            <input type="number" name="media" id="imedia" required placeholder="0 a 10" min="0" max="10" step="0.1" value="5">
-        </p>
-        <p>
-            <label for="imes">Periodo letivo: </label>
-            <input type="month" name="mes" id="imes" required value="2026-06">
-        </p>
-        <p>
-            <label for="idia">Dia da prova: </label>
-            <input type="date" name="dia" id="idia" required>
-        </p>
-        <p>
-            <label for="ihora">Horario da prova: </label>
-            <input type="time" name="hora" id="ihora" required>
-        </p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome: </label>
+                <input type="text" name="nome" id="inome" autocomplete="name" required maxlength="30" placeholder="Nome Competo">
+            </p>
+            <p>
+                <label for="imedia">Media: </label>
+                <input type="number" name="media" id="imedia" required placeholder="0 a 10" min="0" max="10" step="0.1" value="5">
+            </p>
+            <p>
+                <label for="imes">Periodo letivo: </label>
+                <input type="month" name="mes" id="imes" required value="2026-06">
+            </p>
+            <p>
+                <label for="idia">Dia da prova: </label>
+                <input type="date" name="dia" id="idia" required>
+            </p>
+            <p>
+                <label for="ihora">Horario da prova: </label>
+                <input type="time" name="hora" id="ihora" required>
+            </p>
+            <p>
+                <label for="itelefone">Telefone: </label>
+                <input type="tel" name="telefone" id="itelefone" required pattern="^\d{4,5}-\d{4}$">
+            </p>
+            <p>
+                <label for="iemail">Email: </label>
+                <input type="email" name="e-mail" id="iemail" required>
+            </p>
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
